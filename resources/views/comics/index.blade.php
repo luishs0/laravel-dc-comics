@@ -12,7 +12,7 @@
                 @foreach ($comics as $comic)
                     <div class="col-6 col-sm-2 mt-4">
                         <div class="img-grid">
-                            <a href=""><img src="{{ $comic->thumb }}" alt=""></a>
+                            <a href="{{ route('comics.show', $comic->id) }}"><img src="{{ $comic->thumb }}" alt=""></a>
                         </div>
                         <div class="text-grid">
                             <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }}</a>
