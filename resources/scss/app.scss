@@ -1,1 +1,146 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+// HEADER
+.header-top {
+    background-color: #0282f9;
+    color: white;
+    font-size: .7rem;
+    padding: .3rem;
+}
+
+.container-navbar {
+    background-color: #f8f9fa;
+
+    .container-fluid {
+        padding: 0;
+
+        .logo-dc {
+            height: 100%;
+
+            img {
+                height: 3rem;
+            }
+        }
+
+        .active {
+            color: #0282f9;
+        }
+
+    }
+}
+
+.jumbo {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+// /HEADER
+
+
+// MAIN
+
+.container-grid {
+    background-color: #1c1c1c;
+    color: white;
+
+    .img-grid {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+            object-position: top;
+            cursor: pointer;
+        }
+    }
+
+    .text-grid {
+        cursor: pointer;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.container-main-bottom {
+    background-color: #0282f9;
+    color: white;
+
+    .img-main-bottom {
+        img {
+            height: 5rem;
+        }
+    }
+}
+
+// /MAIN
+
+
+// FOOTER
+
+footer {
+    overflow: hidden;
+
+    .container-footer {
+        background-image: url(../img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        overflow: hidden;
+        height: 100%;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-right: 5rem;
+            padding: 0;
+        }
+
+        .container-container-footer {
+            height: 100%;
+
+
+            .lists-footer {
+                padding: 4rem;
+                height: 100%;
+
+            }
+
+            .img-footer {
+                height: 70%;
+
+
+                img {
+                    height: 100%;
+
+                }
+            }
+        }
+    }
+
+}
+
+// /FOOTER
+
+//MAIN HOME
+
+.main-home {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// /MAIN HOME
