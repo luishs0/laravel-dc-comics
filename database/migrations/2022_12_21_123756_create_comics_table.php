@@ -18,12 +18,12 @@ return new class extends Migration
             $table->string('title', 200);
             $table->text('description');
             $table->text('thumb');
-            $table->decimal('price', 3, 2);
+            $table->string('price', 20);
             $table->string('series', 90);
             $table->date('sale_date');
             $table->string('type', 90);
-            $table->array('artists');
-            $table->array('writers');
+            $table->string('artists');
+            $table->string('writers');
             $table->timestamps();
         });
     }
