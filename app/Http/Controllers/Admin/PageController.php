@@ -26,7 +26,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class PageController extends Controller
         $comic->fill($data);
         $comic->save();
 
-        return redirect()->route('comic.show', $comic->id);
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**

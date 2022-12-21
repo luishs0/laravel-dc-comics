@@ -34,6 +34,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('comics.index') }}">COMICS</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('comics.create') }}">CREATE COMIC</a>
+                            </li>
                         </ul>
                         <form class="d-flex navbar-form" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
