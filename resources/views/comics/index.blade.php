@@ -15,7 +15,7 @@
                             <a href=""><img src="{{ $comic->thumb }}" alt=""></a>
                         </div>
                         <div class="text-grid">
-                            <a href=""> {{ $comic->title }}</a>
+                            <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }}</a>
 
                         </div>
                     </div>
