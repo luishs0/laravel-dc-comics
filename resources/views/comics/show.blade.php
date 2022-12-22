@@ -13,7 +13,10 @@
             <p>{{ $comic->sale_date }}</p>
             <p>Type: {{ $comic->type }} </p>
             <p>{{ $comic->description }}</p>
+
+            <a class="btn btn-warning mb-5" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
         </div>
+
     </section>
 
 @endsection

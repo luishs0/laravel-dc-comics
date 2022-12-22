@@ -14,10 +14,11 @@
                         <div class="img-grid">
                             <a href="{{ route('comics.show', $comic->id) }}"><img src="{{ $comic->thumb }}" alt=""></a>
                         </div>
-                        <div class="text-grid">
+                        <div class="text-grid d-flex justify-content-between">
                             <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }}</a>
-
+                            <a class="edit-btn" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
                         </div>
+
                     </div>
                 @endforeach
             </div>

@@ -68,6 +68,10 @@
             color: white;
             text-decoration: none;
         }
+
+        .edit-btn {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -85,55 +89,6 @@
 // /MAIN
 
 
-// FOOTER
-
-footer {
-    overflow: hidden;
-
-    .container-footer {
-        background-image: url(../img/footer-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        overflow: hidden;
-        height: 100%;
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        ul {
-            list-style-type: none;
-            margin-right: 5rem;
-            padding: 0;
-        }
-
-        .container-container-footer {
-            height: 100%;
-
-
-            .lists-footer {
-                padding: 4rem;
-                height: 100%;
-
-            }
-
-            .img-footer {
-                height: 70%;
-
-
-                img {
-                    height: 100%;
-
-                }
-            }
-        }
-    }
-
-}
-
-// /FOOTER
-
 //MAIN HOME
 
 .main-home {
@@ -142,5 +97,7 @@ footer {
         object-fit: cover;
     }
 }
+
+
 
 // /MAIN HOME
