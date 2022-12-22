@@ -14,7 +14,15 @@
             <p>Type: {{ $comic->type }} </p>
             <p>{{ $comic->description }}</p>
 
-            <a class="btn btn-warning mb-5" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+            <div class="d-flex justify-content-between">
+                <a class="btn btn-warning mb-3" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+            </div>
         </div>
 
     </section>

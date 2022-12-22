@@ -16,7 +16,15 @@
                         </div>
                         <div class="text-grid d-flex justify-content-between">
                             <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }}</a>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
                             <a class="edit-btn" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit">Delete</button>
+                            </form>
                         </div>
 
                     </div>
